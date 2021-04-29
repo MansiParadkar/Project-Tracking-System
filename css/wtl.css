@@ -1,0 +1,285 @@
+body {
+    background: #ffe6e6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#mainNavbar {
+    font-size: 1.5em;
+    font-weight: 100;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+#mainNavbar .nav-link{
+    color: #9e2b35;
+    font-weight: 700;
+}
+#mainNavbar .nav-link:hover {
+    color: #b15058;
+    font-weight: 200;
+}
+
+#mainNavbar .navbar-brand {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: #9e2b35;
+    letter-spacing:0.5em;
+    font-weight: 900;
+}
+.navbar.scrolled {
+    background: #c5787f;
+	transition: background 500ms;
+}
+.carousel-inner { 
+    height: 600px; 
+}
+.carousel-item.active { 
+    height: 100%!important; 
+} 
+.carousel-caption {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}  
+.carousel-item img { 
+    object-fit: cover; 
+    height: 100%!important; 
+} 
+#hey {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1em;
+}
+
+#hey:hover {
+	transition: 0.5s ease;
+	transform: translateY(-0.25em);
+}
+#heading:hover {
+	transform: translateY(-0.25em);
+	background: white;
+	padding: 17px;
+	border-radius: 0.5em;
+	transition: 0.5s ease;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.why:hover {
+	transform: translateY(-0.25em);
+	background-color: rgb(240, 174, 174);
+	border-radius: 0.5em;
+	transition: 1s ease;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.images{
+	background: rgb(250, 160, 210);
+}
+.image {
+	position: relative;
+	margin: 20px;
+}
+
+.image__img {
+	position: relative;
+	width: 100%;
+	border-radius: 0.5em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* margin: 20px; */
+}
+
+.image__overlay {
+	position: absolute;
+	border-radius: 1em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0,0.6);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.image__overlay:hover {
+	backdrop-filter: blur(5px);
+}
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.image__description {
+	font-size: 1.25em;
+	margin-top: 0.25em;
+}
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+.youtube span {
+	background-color: #bb0000;
+}
+.pinterest span {
+	background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button .fa-instagram {
+	color: #517fa4;
+}
+.icon-button .fa-youtube {
+	color: #bb0000;
+}
+.icon-button .fa-pinterest {
+	color: #cb2027;
+}
+
+.icon-button:hover .icon-twitter{
+    color: white;
+}
+.icon-button:hover .icon-facebook{
+    color: white;
+}
+.icon-button:hover .icon-google-plus{
+    color: white;
+}
+.icon-button:hover .fa-tumblr{
+    color: white;
+}
+.icon-button:hover .fa-instagram{
+    color: white;
+}
+.icon-button:hover .fa-youtube{
+    color: white;
+}
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
